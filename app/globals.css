@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@custom-variant dark (&:where(.dark, .dark *)) {
+}
+
+:root {
+  --fg: #fff;
+  --bg: #161616;
+}
+
+html, body {
+  background: url("/backgrounds/mount-2.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--fg);
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for depth */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #ffffff; /* Text color */
+    /* padding: 20px; */
+  }
+}
