@@ -41,5 +41,8 @@
     "terminal.ansiRed": "#CD3F45",
     "terminal.ansiWhite": "#D6D6D6",
     "terminal.ansiYellow": "#E6CD69"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
